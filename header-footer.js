@@ -6,7 +6,7 @@ class Header extends HTMLElement {
             <nav class="navbar navbar-expand-md navbar-dark" style="background: linear-gradient(to right, #8BCFD4, #42A5AC); font-family: 'Verdana', sans-serif;">
             <div class="container-fluid">   
                 <a class="navbar-brand" href="/Question_8_WEB_SOEN287_FULLSTACK/index.html">
-                <img src="/Question_8_WEB_SOEN287_FULLSTACK/_assets/images/logo.png" alt="Future Fuzzy Logo" width="250" height="150" class="d-inline-block align-text-top">
+                <img src="_assets/images/logo.png" alt="Future Fuzzy Logo" width="250" height="150" class="d-inline-block align-text-top">
                 </a>
                 <div class="social" style="font-size: 30px; padding: 10px;">
                 <div class="container mt-5">
