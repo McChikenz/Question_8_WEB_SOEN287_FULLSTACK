@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="modal fade" id="findFuzzyModal" tabindex="-1" aria-labelledby="findFuzzyModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="findFuzzyModalLabel">Find a Fuzzy</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form action="#" method="post" onsubmit="validateForm()">
+                        <div class="mb-3">
+                            <label for="fuzzyType" class="form-label">Type of Fuzzy</label>
+                            <select name="fuzzyType" id="fuzzyType" class="form-select" >
+                                <option value="" disabled selected>Select a type</option>
+                                <option value="dog">Dog</option>
+                                <option value="cat">Cat</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="petBreed" class="form-label">Breed</label>
+                            <input type="text" class="form-control" id="petBreed" list="breedList" >
+                            <datalist id="breedList">
+                                <option value="Mixed Breed"></option>
+                            </datalist>
+                        </div>
+                        <div class="mb-3">
+                            <label for="fuzzyAge" class="form-label">Age</label>
+                            <select name="fuzzyAge" id="fuzzyAge" class="form-select" >
+                                <option value="" disabled selected>Select an age</option>
+                                <option value="0-1">0-1</option>
+                                <option value="1-3">1-3</option>
+                                <option value="3-5">3-5</option>
+                                <option value="5+">5+</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="fuzzyGender" class="form-label">Gender</label>
+                                <select name="fuzzyGender" id="fuzzyGender" class="form-select" >
+                                    <option value="" disabled selected>Select a gender</option>
+                                    <option value="neither">Neither</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="personality" class="form-label">Peronality</label>
+    
+                            <select name="personality" id="personality" class="form-select" >
+                                <option value="" disabled selected>Select a personality</option>
+                                <option value="neither">Neither</option>
+                                <option value="friendly">Friendly</option>
+                                <option value="aggressive">Aggressive</option>
+                            </select>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                            <button type="reset" class="btn btn-secondary">Clear</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="../js-folder/findFuzzy.js"></script>
+</body>
+</html>

@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+body {
+    background-color: #D9F3F4;
+    overflow-x: hidden;
+    position: relative;
+    min-height: 100vh;
+    margin: 0;
+    padding-bottom: 20em; /* Height of the footer */
+}
+
+@media (max-width: 768px) {
+    body {
+        background-color: #B2EBF2;
+        padding-bottom: 15em; /* Adjust footer height for tablets */
+    }
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/*available -pets  page*/
+.center {
+    text-align: center;
+    font-size: 3.3rem;
+    margin-top: 15rem;
+}
+
+
+#toggleSidebar {
+    background-color: #8BCFD4;
+     position: absolute; 
+     top: 10px; 
+     right: -40px; 
+     z-index: 11;
+}
+
+#toggleSidebar:hover {
+    background-color: #42A5AC;
+}
+
+.card {
+    background-color: #8BCFD4;
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+/* .card:hover{
+ opacity: 0.3;
+ 
+} */
+
+.social a {
+    color: #fff;
+}
+
+.social a:hover {
+    color: #8BCFD4;
+}
+
+.nav-link {
+    border-radius: 10px;
+}
+
+.nav-link:hover {
+    background-color: #42A5AC;
+    color: #fff;
+}
+
+
+
+/* Scroll bar customization*/
+::-webkit-scrollbar {
+    width: 15px;
+}
+::-webkit-scrollbar-track {
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #42A5AC;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #8BCFD4; 
+  }
+
+
+
+/* Media query for tablets */
+@media (max-width: 768px) {
+    body {
+        background-color: #B2EBF2;
+    }
+
+    .nav-link:hover {
+        background-color: #00796B;
+    }
+}
+
+/* Media query for phones */
+@media (max-width: 480px) {
+    body {
+        background-color: #80DEEA;
+    }
+
+    .nav-link:hover {
+        background-color: #004D40;
+    }
+}
+
+
